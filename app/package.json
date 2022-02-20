@@ -5,7 +5,7 @@
   "main": "main.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hovancik/stretchly.git"
+    "url": "git+https://github.com/blimmer/stretchly.git"
   },
   "keywords": [
     "Stretchly",
@@ -16,7 +16,7 @@
   "author": "Jan Hovancik <jan@hovancik.net>",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/hovancik/stretchly/issues"
+    "url": "https://github.com/blimmer/stretchly/issues"
   },
   "homepage": "https://hovancik.net/stretchly",
   "dependencies": {
