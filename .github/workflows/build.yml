@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - release
+      - m1-mac-build
 
 jobs:
   build:
@@ -16,6 +17,11 @@ jobs:
         node-version: '16.9.1'
     - run: npm install npm -g
     - run: npm install
-    - run: node_modules/.bin/electron-builder build
+    - name: Build MacOS Intel
+      run: node_modules/.bin/electron-builder build -m --x64
+      env:
+        GH_TOKEN: ${{ secrets.github_token }}
+    - name: Build MacOS M1/ARM
+      run: node_modules/.bin/electron-builder build -m --arm64
       env:
         GH_TOKEN: ${{ secrets.github_token }}
